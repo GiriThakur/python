@@ -1,16 +1,10 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Apr 21 05:37:27 2022
-
-@author: thakur
-"""
-
-ch = input("Please Enter Your Own Character : ")
-
-if((ch >= 'a' and ch <= 'z') or (ch >= 'A' and ch <= 'Z')): 
-    print("The Given Character ", ch, "is an Alphabet") 
-elif(ch >= '0' and ch <= '9'):
-    print("The Given Character ", ch, "is a Digit")
+ 
+n = int(input("Enter any number: "))
+sum1 = 0
+for i in range(1, n):
+    if(n % i == 0):
+        sum1 = sum1 + i
+if (sum1 == n):
+    print("The number is a Perfect number!")
 else:
-    print("The Given Character ", ch, "is a Special Character")
+    print("The number is not a Perfect number!")
